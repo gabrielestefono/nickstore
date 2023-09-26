@@ -1,0 +1,17 @@
+.destaque{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+
+    > div{
+        width: 80vw;
+        height: 500px;
+        overflow: hidden;
+
+        > .swiper{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
