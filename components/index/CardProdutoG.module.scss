@@ -1,0 +1,24 @@
+.custom_card{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    grid-column: span 2;
+
+    > img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    > h3{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    > p{
+        font-size: 14px;
+    }
+}
