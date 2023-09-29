@@ -4,7 +4,7 @@ export default function Header(){
     return (
         <div className={styles.header}>
             <div>
-                <a href="#">Sua Loja</a>
+                <a href="/">Sua Loja</a>
                 <ul>
                     <li><a href="">Roupas</a></li>
                     <li><a href="">Calçados</a></li>
@@ -14,7 +14,7 @@ export default function Header(){
                 </ul>
                 <div>
                     <ul>
-                        <li><a href="">Login</a></li>
+                        <li><a href="/login">Login</a></li>
                         <li><a href="">Carrinho</a></li>
                     </ul>
                 </div>
