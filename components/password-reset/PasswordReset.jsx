@@ -26,7 +26,7 @@ export default function LoginComponent(props){
                 <button onClick={handleReceberCodigo}>Enviar código</button>
             </form>
             <div>
-                <a href="#" onClick={props.resetPassword}>Voltar</a>
+                <a onClick={props.resetPassword}>Voltar</a>
             </div>
         </div>
     )
@@ -42,7 +42,7 @@ export default function LoginComponent(props){
                 <button onClick={handleReceberCodigo}>Confirmar código</button>
             </form>
             <div>
-                <a href="#" onClick={handleVoltar}>Voltar</a>
+                <a onClick={handleVoltar}>Voltar</a>
             </div>
         </div>
     )

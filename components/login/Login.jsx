@@ -11,9 +11,9 @@ export default function LoginComponent(props){
                 <button>Login</button>
             </form>
             <div>
-                <a href="#" onClick={props.resetPassword}>Esqueceu a senha?</a>
+                <a onClick={props.resetPassword}>Esqueceu a senha?</a>
                 <span>|</span>
-                <a href="#">Criar uma conta</a>
+                <a href="/registro">Criar uma conta</a>
             </div>
         </div>
     )
