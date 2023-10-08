@@ -1,19 +1,22 @@
-import styles from './Right.module.scss';
+import { useState } from 'react';
+
+import LoginComponent from './Login';
+import PasswordReset from '../password-reset/PasswordReset';
 
 export default function RightLogin(){
+    const [esqueceuSenha, setEsqueceuSenha] = useState(false);
+
+    const handleEsqueceuSenha = () => {
+        setEsqueceuSenha(true);
+    }
+
+    const handleNaoEsqueceuSenha = () => {
+        setEsqueceuSenha(false);
+    }
+
     return (
-        <div className={styles.right}>
-            <h1>Login</h1>
-            <form>
-                <input type="text" placeholder="Nome de usuário"/>
-                <input type="password" placeholder="Senha"/>
-                <button>Login</button>
-            </form>
-            <div>
-                <a href="#">Esqueceu a senha?</a>
-                <span>|</span>
-                <a href="#">Criar uma conta</a>
-            </div>
-        </div>
+        <>
+            {!esqueceuSenha ? <LoginComponent resetPassword={handleEsqueceuSenha}/> : <PasswordReset resetPassword={handleNaoEsqueceuSenha}/>}
+        </>
     )
 }
