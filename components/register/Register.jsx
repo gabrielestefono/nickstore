@@ -1,16 +1,24 @@
-import styles from './Register.module.scss';
 
-export default function register(){
+import styles from './LoginComponent.module.scss';
+
+export default function LoginComponent(props){
     return (
-        <div className={styles.form}>
+        <div className={styles.right}>
+            <h1>Registre-se</h1>
             <form>
-                <input type="text" placeholder="Nome" aria-autocomplete='off'/>
-                <input type="text" placeholder="Sobrenome" aria-autocomplete='off'/>
-                <input type="email" placeholder="Email" aria-autocomplete='off'/>
-                <input type="password" placeholder="Senha" aria-autocomplete='off'/>
-                <input type="password" placeholder="Confirmar senha" aria-autocomplete='off'/>
-                <button>Registrar</button>
+                <input type="text" placeholder="Nome"/>
+                <input type="text" placeholder="sobrenome"/>
+                <input type="email" placeholder="Email"/>
+                <input type="text" placeholder="CPF"/>
+                <input type="text" placeholder="Telefone"/>
+                <input type="text" placeholder="Data de Nascimento"/>
+                <input type="text" placeholder="sexo"/>
+                <input type="password" placeholder="password"/>
+                <button>Registre-se</button>
             </form>
+            <div>
+                <a href="/login">Já possui uma conta?</a>
+            </div>
         </div>
     )
 }

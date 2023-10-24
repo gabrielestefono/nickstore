@@ -13,7 +13,7 @@ export default function LoginComponent(props){
             <div>
                 <a onClick={props.resetPassword}>Esqueceu a senha?</a>
                 <span>|</span>
-                <a href="/registro">Criar uma conta</a>
+                <a href="/register">Criar uma conta</a>
             </div>
         </div>
     )
